@@ -13,7 +13,7 @@ export default function Home() {
             return;
         }
 
-        // Navegação enviando parâmetros (Objeto params)
+        // 
         router.push({
             pathname: "/details",
             params: { 
@@ -32,16 +32,16 @@ export default function Home() {
             <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
                 
                 <View style={styles.container}>
-                    {/* Requisito: Imagem */}
+                    {/* */}
                     <Image 
                         source={require('../../assets/pexels-peri-2149976252-35080026.jpg')}
                         style={styles.imagem} 
                     />
 
-                    {/* Requisito: Texto */}
+                    {/* */}
                     <Text style={styles.titulo}>Faça seu Pedido de Brownie</Text>
 
-                    {/* Requisito: Campo de Texto (Nome) */}
+                    {/* */}
                     <TextInput
                         style={styles.input}
                         placeholder="Seu nome"
@@ -49,7 +49,7 @@ export default function Home() {
                         onChangeText={setNome}
                     />
 
-                    {/* Requisito: Campo de Texto (Quantidade) */}
+                    {/* */}
                     <TextInput
                         style={styles.input}
                         placeholder="Quantidade de Brownies"
@@ -58,7 +58,7 @@ export default function Home() {
                         onChangeText={setQuantidade}
                     />
 
-                    {/* Requisito: Botão Clicável */}
+                    {/* */}
                     <Button title="Confirmar Pedido" onPress={handleNavegar} color="#8B4513" />
                 </View>
 
@@ -67,7 +67,7 @@ export default function Home() {
     );
 }
 
-// Requisito: Layout organizado
+//
 const styles = StyleSheet.create({
     container: {
         flex: 1,

@@ -3,7 +3,7 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 
 export default function Details() {
     const router = useRouter();
-    // Recuperando os parâmetros enviados da tela anterior
+    // 
     const { cliente, qtd } = useLocalSearchParams();
 
     return (
